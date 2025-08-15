@@ -1,4 +1,5 @@
 import PensionComparisonForm from '@/components/PensionComparisonForm';
+import Link from 'next/link';
 
 export default function PensionComparisonPage() {
   return (
@@ -22,30 +23,30 @@ export default function PensionComparisonPage() {
 
             {/* Navigation Links */}
             <nav className="hidden lg:flex items-center space-x-1">
-              <a href="/" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
+              <Link href="/" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
                 🏠 Home
-              </a>
-              <a href="/dashboard" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
+              </Link>
+              <Link href="/dashboard" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
                 📊 Dashboard
-              </a>
-              <a href="/test-pension-api" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
+              </Link>
+              <Link href="/test-pension-api" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
                 🧮 Calculator
-              </a>
-              <a href="/pension-comparison" className="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-semibold border border-green-200">
+              </Link>
+              <Link href="/pension-comparison" className="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-semibold border border-green-200">
                 ⚖️ Comparison
-              </a>
-              <a href="/test-comparison" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
+              </Link>
+              <Link href="/test-comparison" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
                 🧪 Test API
-              </a>
-              <a href="/features" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
+              </Link>
+              <Link href="/features" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
                 ✨ Features
-              </a>
-              <a href="/about" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
+              </Link>
+              <Link href="/about" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
                 ℹ️ About
-              </a>
-              <a href="/contact" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
+              </Link>
+              <Link href="/contact" className="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 font-medium">
                 📞 Contact
-              </a>
+              </Link>
             </nav>
 
             {/* Mobile Menu Button */}
