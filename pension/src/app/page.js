@@ -29,6 +29,8 @@ export default function Home() {
             {/* Navigation */}
             <nav className="hidden md:flex space-x-8">
               <Link href="/" className="text-green-600 font-semibold">Home</Link>
+              <Link href="/pension-comparison" className="text-gray-700 hover:text-green-600 transition-colors">Pension Comparison</Link>
+              <Link href="/test-comparison" className="text-gray-700 hover:text-green-600 transition-colors">Test API</Link>
               <Link href="/about" className="text-gray-700 hover:text-green-600 transition-colors">About</Link>
               <Link href="/features" className="text-gray-700 hover:text-green-600 transition-colors">Features</Link>
               <Link href="/faq" className="text-gray-700 hover:text-green-600 transition-colors">FAQ</Link>
@@ -101,9 +103,9 @@ export default function Home() {
                 Track your pension, simplify claims, and get retirement-ready with tools designed for peace of mind.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg">
-                  Get Started
-                </button>
+                <Link href="/pension-comparison" className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg text-center">
+                  Compare Pension Schemes
+                </Link>
                 <button className="px-8 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition-colors font-semibold text-lg">
                   Learn More
                 </button>
@@ -123,7 +125,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Feature Card 1 */}
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
@@ -160,6 +162,19 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Retirement Calculator</h3>
               <p className="text-gray-600 text-center">
                 Plan your savings and estimate future income.
+              </p>
+            </div>
+
+            {/* Feature Card 4 - Pension Comparison */}
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Scheme Comparison</h3>
+              <p className="text-gray-600 text-center">
+                Compare different pension schemes and find the best option for you.
               </p>
             </div>
           </div>
